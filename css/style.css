@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: font_sample;
+	src:url('../fonts/be______.TTF') format('truetype'),
+	url('../fonts/be______.eot#iefix') format('embedded-opentype'),
+	url('../fonts/be______.woff') format('woff');
+	font-weight:normal;
+	font-style:normal;
+}
+
+img {
+	width: 25%;
+	height: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.intro {
+	display: block;
+	text-align: center;
+}
+iframe {
+	width: 100%;
+	height: auto;
+
+}
+form {
+	margin-left: 10em;
+	margin-right: 10em;
+	margin-top: 0.5em;
+}
+
+#vagabond {
+	text-align: center;
+	font-family: font_sample;
+	font-size: 60px;
+	letter-spacing: -60px;
+	
+}
