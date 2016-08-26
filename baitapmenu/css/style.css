@@ -1,0 +1,44 @@
+.menu {
+	margin: auto;
+	width: 80%;
+	height: 50px;
+	background: green; 
+}
+.logo {
+	width: 30%;
+	height: 50px ;
+	float:left;
+}
+.logo h3 {
+	color: #fff;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.nav {
+	width: 70%;
+	height: 50px;
+	float: right;
+}
+
+.nav ul ul {
+	display: none;
+}
+.nav > ul > li  {
+	display: inline-block;
+	list-style-type: none;
+	padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+	
+}
+.nav ul li a {
+	text-decoration: none;
+	color: #fff;
+
+}
+.nav ul li:hover  ul {
+	display: block;
+	z-index: 999;
+
+
+}
