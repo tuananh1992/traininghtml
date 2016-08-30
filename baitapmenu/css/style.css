@@ -3,6 +3,9 @@
 	padding: 0;
 	
 }
+.clear {
+	clear: both;
+}
 body {
 	background: url('http://www.os-templates.com/website-templates/template-demos/free-website-templates/aerogem/images/live-demo/background-01.jpg') no-repeat center center fixed;
 	background-size: cover;
@@ -115,4 +118,26 @@ a {
 	left: 5px;
 	top: 15px;
 	font-size: 12px;
+}
+
+ul.main-menu li.icon ul.main-menu {
+	display: none;
+	/* position: absolute; */
+}
+@media only screen and (max-width: 768px) {
+	.nav ul {
+		display: none;
+	}
+	.nav {
+		background: url('https://cdn2.iconfinder.com/data/icons/blue-rounded-set/154/menu-bar-list-round-mobile-512.png') no-repeat;
+		background-size: 50px 50px;
+		cursor: pointer;
+		position: relative;
+		padding-left: ;
+	}
+	.nav:hover ul {
+		display: block;
+		position: absolute;
+		top: 50px;
+	}
 }

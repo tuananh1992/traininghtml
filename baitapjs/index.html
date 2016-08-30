@@ -3,35 +3,17 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/test.js"></script>
 </head>
 <body>
-	<input type="button" onclick="alert('Help')" value="click me">
-	<p id="demo"></p>
-	<script type="text/javascript">
-		var fullName = "Hello "+ "John &nbsp";
-		document.getElementById("demo").innerHTML += fullName;
-		var names = ['Anh', 'Tuấn', 'Hoàng'];
-		document.getElementById("demo").innerHTML += names[0]+"<br>";
-		var person = {
-			firstName : "Anh",
-			lastName : "Hoàng",
-			middleName : "Tuấn",
-			age : 24,
-			fullName : function(){
-				return this.lastName + " " + this.middleName + " " + this.firstName;
-			}
-		};
-		document.getElementById("demo").innerHTML += "My name is " + person.fullName() + ". I am "+ person.age + " years old.";
-		var x = 'It\'s alright.';
-		document.getElementById("demo").innerHTML += "<br>" + x;
-		str = "I hate you";
-		document.getElementById("demo").innerHTML += str.replace("hate","like");
-		var myList = ['Apple','Orange','Banana'];
-		for(i = 0; i < myList.length; i++) {
-			console.log('you have '+myList[i]);
-		}
-	</script>
-	<span onmouseover = "this.style.color = 'yellow'" onmouseout = "this.style.color = 'black'">Mouse over me</span>
-
+	
+		Số 1 : <input type="text" id="number1" />
+		Số 2 : <input type="text" id="number2" /><br/>
+		<button type="button" onclick="myFunction()">Cộng</button> 
+		<button type="button" onclick="myFunction1()">Trừ</button>
+		<button type="button" onclick="myFunction2()">Nhân</button>
+		<button type="button" onclick="myFunction3()">Chia</button>
+	
 </body>
 </html>
