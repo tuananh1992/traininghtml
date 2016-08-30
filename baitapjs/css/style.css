@@ -1,8 +1,11 @@
 form {
 	background: #5a8457;
 	border: 1px solid #5a8457;
+	display: block;
+	text-align: center;
 }
-button {
+button, input {
 	margin: 20px 30px;
 
 }
+
