@@ -31,3 +31,19 @@ function register() {
 	var lastname = document.getElementById('Lastname').value; 
 	alert("Username : " + username + "\r\n Password : " + password + "\r\n Firstname : "+ firstname + "\r\n Lastname : " +  lastname);
 }
+function validateFunction() {
+	var Age = document.getElementById('number').value;
+	if (Age == "") {
+		alert('Vui lòng nhập tuổi');
+	} else {
+		if (isNaN(Age)) {
+			alert('Vui lòng nhập số');
+		} else {
+			if (Age >= 18) {
+				alert('Tuổi trưởng thành');
+			} else {
+				alert('Thiếu niên');
+			}
+		}
+	}
+}
