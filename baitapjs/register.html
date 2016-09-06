@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+		$(function() {
+			//wwwww
+		    $( "#datepicker" ).datepicker();
+		    
+		});
+  	</script>
+</head>
+<body>
+<div class="chidan">
+<span id="demo"></span>
+
+</div>
+	<form id="myForm" action="#" method="post">
+		Register<br/>
+		Username : <input  id="Username" /> <br/>
+		Password : <input  id="Password" /> <br/>
+		Firstname : <input  id="Firstname" /> <br/>
+		Lastname : <input  id="Lastname" /> <br/>
+		Birth of day :  <input type="text" id="datepicker" /> 
+		<br>Address : <input  id="Address" /> <br/>
+		Phone number : <input  id="phone_number" /> <br/>
+		Gender : <input type="radio" name="gender" value="Male" id="Male"> Male
+				<input type="radio" name="gender" value="Female" id="Female"> Female<br/>
+				<input type="button" value="Reset" onclick="myFunction()" />
+				<input type="submit" value="Register" onclick=" register()" />
+	</form>
+</body>
+</html>
