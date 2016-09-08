@@ -47,3 +47,9 @@ function validateFunction() {
 		}
 	}
 }
+function add() {
+	var num1 = parseInt(prompt("Nhap so thu nhat : "));
+	var num2 = parseInt(prompt("Nhap so thu hai : "));
+	var result = num1 + num2;
+	alert("Tổng hai số : "+result");
+}

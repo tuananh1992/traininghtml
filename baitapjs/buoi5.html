@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>function</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/test.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// for(i = 0; i <= 10; i++){
+		// 	document.write("&nbsp;The number is "+ i);
+		// 	document.write("&nbsp");
+		// }
+
+		// var i = 0;
+		// while(i < 10){
+		// 	document.write("&nbsp;the number is "+ i);
+		// 	i++;
+		// }
+
+		// var i = 1;
+		// do {
+		// 	document.write(i);
+		// 	i++;
+		// } while (i < 10);
+
+		// for(i = 0; i < 10; i++){
+		// 	if (i === 4) {break;}
+		// 	document.write(i);
+		// }
+
+		// for(i = 0; i < 10; i++){
+		// 	if (i===4) {continue;}
+		// 	document.write(i);
+		// }
+
+		// var weekdayNum = "n2";
+		// switch(weekdayNum){
+		// 	case "1": 
+		// 		document.write('chủ nhật'); 
+		// 		break;
+		// 	case "n2": 
+		// 		document.write('Thứ 2'); 
+		// 		break;
+
+		// 	case 3: document.write('Thứ 3'); break;
+		// 	case 4: document.write('Thứ 4'); break;
+		// 	case 5: document.write('Thứ 5'); break;
+		// 	case 6: document.write('Thứ 6'); break;
+		// 	case 7: document.write('Thứ 7'); break;
+		// 	default: document.write('invalid number');
+		// }
+
+		// q1-------------------------------------------------------------------
+		var obj = {};
+		obj.name = 'John';
+		obj.name = 'Serge';
+		delete obj.name;
+		// q2----------------------------------------------------------------------------------
+		var menu = {
+			width: 200,
+			height: 300,
+			title: "My menu"
+		}
+		function isNumeric(n){
+			return !isNaN(parseFloat(n)) && isFinite(n);
+		}
+		function multiplyNumeric(obj) {
+			for(var key in obj){
+				var val = obj[key];
+				if (isNumeric[val]) {
+					obj[key] = val*2;
+				}
+			}
+		}
+		multiplyNumeric(menu);
+		alert("menu width: " + menu.width + " height: "+ menu.height + " title: "+ menu.title)
+		//--------------------------------------------------------------------------------------
+		var user = {
+			name: "anh",
+			askName: function(){
+				this.name = prompt('Your name?')
+			},
+			sayHi: function(){
+				alert('Hi, my name is '+this.name)
+			}
+		}
+		user.askName();
+		user.sayHi();
+
+		//q3-------------------------------------------------------------------------------------
+		/*var summator = sum(a,b) {
+			return a+ b;
+		};*/
+		
+		
+		var a = 5;
+		var b = 10;
+		var c = 0;
+
+		function sum(a, b) {
+			//global c;
+			c = a + b;
+			return c;
+		}
+
+		function run () {
+			alert(c);
+		}
+
+		sum(a, b);
+		run();
+	</script>
+
+</body>
+</html>
