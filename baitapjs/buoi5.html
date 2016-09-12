@@ -8,7 +8,39 @@
 </head>
 <body>
 	<script type="text/javascript">
-		
+		var summator = {
+			sum: function(a, b) {
+				return a + b;
+			},
+			run: function () {
+				var number1 = parseInt(prompt('Nhap so a: '));
+				var number2 = parseInt(prompt('Nhap so b: '));
+				var total = summator.sum(number1,number2);	
+				alert(total);
+
+			}
+		};
+
+		summator.run();
+
+		// var menu = {
+		//     width:  300,
+		//     height: 200,
+		//     title: "Menu"
+		// };
+
+		/*alert(menu['width']);
+		alert(menu['height']);
+		alert(menu['title']);
+		*/
+
+		// for(var key in menu) {
+		// 	alert(menu[key]);
+		    //var val = menu[key];
+		    //alert("Key: "+key+" value:"+val);
+		// }
+
+
 		// for(i = 0; i <= 10; i++){
 		// 	document.write("&nbsp;The number is "+ i);
 		// 	document.write("&nbsp");
@@ -54,64 +86,93 @@
 		// }
 
 		// q1-------------------------------------------------------------------
-		var obj = {};
-		obj.name = 'John';
-		obj.name = 'Serge';
-		delete obj.name;
+		// var obj = {};
+		// obj.name = 'John';
+		// obj.name = 'Serge';
+		// delete obj.name;
 		// q2----------------------------------------------------------------------------------
-		var menu = {
-			width: 200,
-			height: 300,
-			title: "My menu"
-		}
-		function isNumeric(n){
-			return !isNaN(parseFloat(n)) && isFinite(n);
-		}
-		function multiplyNumeric(obj) {
-			for(var key in obj){
-				var val = obj[key];
-				if (isNumeric[val]) {
-					obj[key] = val*2;
-				}
-			}
-		}
-		multiplyNumeric(menu);
-		alert("menu width: " + menu.width + " height: "+ menu.height + " title: "+ menu.title)
+		// var menu = {
+		// 	width: 200,
+		// 	height: 300,
+		// 	title: "My menu"
+		// }
+		// function isNumeric(n){
+		// 	return !isNaN(parseFloat(n)) && isFinite(n);
+		// }
+		// function multiplyNumeric(obj) {
+		// 	for(var key in obj){
+		// 		var val = obj[key];
+		// 		if (isNumeric[val]) {
+		// 			obj[key] = val*2;
+		// 		}
+		// 	}
+		// }
+		// multiplyNumeric(menu);
+		// alert("menu width: " + menu.width + " height: "+ menu.height + " title: "+ menu.title)
+		// var menu = {
+		// 	width: 300,
+		// 	height: 200,
+		// 	title: "Menu"
+		// };
+		// for (var key in menu) {
+		// 	var val = menu[key];
+		// 	alert("Key: "+ key + " value: "+ val);
+		// }
 		//--------------------------------------------------------------------------------------
-		var user = {
-			name: "anh",
-			askName: function(){
-				this.name = prompt('Your name?')
-			},
-			sayHi: function(){
-				alert('Hi, my name is '+this.name)
-			}
-		}
-		user.askName();
-		user.sayHi();
+		// var user = {
+		// 	name: "anh",
+		// 	askName: function(){
+		// 		this.name = prompt('Your name?')
+		// 	},
+		// 	sayHi: function(){
+		// 		alert('Hi, my name is '+this.name)
+		// 	}
+		// }
+		// user.askName();
+		// user.sayHi();
+		// function sayHi(){
+		// 	for (var i = 0; i < arguments.length; i++) {
+		// 		alert("Hi "+arguments[i]);
+		// 	}
+		// }
+		// sayHi("Anh","Hoang");
+		//--------------------------------------------------------------------------------------
+		// var user = {
+		// 	name: "Hoang",
+		// 	age: 25,
+		// 	size: {
+		// 		top: 90,
+		// 		midde: 60,
+		// 		bottom: 90
+		// 	}
+		// }
+		// alert(user.name);
+		// alert(user.size.midde);
 
+		// var rong = {};
+		// var value = rong.nonexistant
+		// alert(value);
+		// if (true) {}
 		//q3-------------------------------------------------------------------------------------
-		/*var summator = sum(a,b) {
-			return a+ b;
-		};*/
 		
 		
-		var a = 5;
+		
+		/*var a = 5;
 		var b = 10;
 		var c = 0;
 
 		function sum(a, b) {
-			//global c;
 			c = a + b;
 			return c;
 		}
 
 		function run () {
 			alert(c);
-		}
+		}*/
 
-		sum(a, b);
-		run();
+		// sum(a, b);
+		//run();
+
 	</script>
 
 </body>
