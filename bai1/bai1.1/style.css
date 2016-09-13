@@ -31,3 +31,6 @@
 .row p {
 	text-align: center;
 }
+.content input {
+	margin-bottom: 10px;
+}

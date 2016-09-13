@@ -47,7 +47,47 @@ switch ($favColour) {
 		echo "My favorite color is black!";
 }
 //----------------------------------------------
- ?>
+
+$x = 6;
+// while ($x <= 10) {
+// 	echo "The number is: $x <br>";
+// 	$x++;
+// }
+do {
+ echo "The number is: $x <br>";
+ $x++;
+} while ($x <= 5);
+//--------------------------------------------------------
+$colors = array("red", "green", "blue", "yellow"); 
+foreach ($colors as $key => $value) {
+	echo "$value <br>";
+}
+//-----------------------------------------------------------
+function intro($name, $year){
+	echo "My name is $name.I was born in $year<br>";
+}
+
+intro("Anh", "24");
+intro("Giang", "20");
+intro("Linh", "25");
+//------------------------------------------------------------
+function sum($a, $b) {
+	$c = $a + $b;
+	return $c;
+}
+echo "2 + 3 = ".sum(2, 3)."<br>";
+//-------------------------------------------------------
+$cars = array("Volvo", "BMW", "Toyota"); 
+echo "I like ".$cars[0].",".$cars[1]." and ".$cars[2];
+$arraylength = count($cars);
+for($x = 0;$x < $arraylength; $x++){
+	echo $cars[$x];
+	echo "<br>";
+}
+//--------------------------------------------------------
+$age = array("Anh"=>"24","Hoang"=>"30","Tuan"=>"28");
+echo "Anh is ".$age['Anh']." years old.";
+?>
 
 </body>
 </html>
