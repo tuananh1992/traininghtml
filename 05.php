@@ -12,16 +12,16 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<style type="text/css">
 		.content{
-			width: 750px;
-			height: 500px;
+			width: 650px;
+			height: 450px;
 			background: #2A5099;
 			display: block;
 			margin: 20px auto;
 			padding-top: 25px;
 		}
 		.sign_up{
-			width: 600px;
-			height: 400px;
+			width: 550px;
+			height: 350px;
 			background: #D6DCEA;
 			display: block;
 			margin: 20px auto;
@@ -35,6 +35,7 @@
 			color: #FFFCFF;
 			background: #599B3A;
 			font-size: 13px;
+			margin-top: 10px;
 		}
 		.pr{
 			float: right;
@@ -47,7 +48,6 @@
 	</script>
 </head>
 <body>
-	
 	<?php 
 	$fname = $lname = $email = $password = $birthday = "";
 	if (isset($_POST['submit'])) {
@@ -73,13 +73,18 @@
 			$errPassword = "Vui long nhap password";
 		}
 		if ($_POST['birthday'] == "") {
-			$errBirthday = "Vui lòng chọn ngày sinh";
+			$errBirthday = "Vui lòng chọn";
+		}
+		if ($_POST['gender'] == "Select Sex:") {
+			$errGender = "Vui lòng chọn giới tính <br>";
+		}else{
+			$gender = $_POST['gender'];
 		}
 		echo "First Name*: ".$fname."<br>";
 		echo "Last Name* ".$lname."<br>";
 		echo "Your Email*: ".$email."<br>";
 		echo "New Password*: ".$password."<br>";
-		echo "You are: ".$gender;
+		echo "You are: ".$gender."<br>";
 		echo "Your birthday is  ".$birthday;
 	}
 	?>
@@ -93,7 +98,7 @@
 						<p class="pr">First Name*:</p>
 					</div>
 					<div class="col-sm-8">
-						<input type="text" name="fname"><?php echo isset($errFirstname) ? $errFirstname:""; ?>
+						<input type="text" name="fname"> <?php echo isset($errFirstname) ? $errFirstname:""; ?>
 					</div>
 				</div>
 				<div class="row">
@@ -101,7 +106,7 @@
 						<p class="pr">Last Name*:</p>
 					</div>
 					<div class="col-sm-8">
-						<input type="text" name="lname"><?php echo isset($errLastname) ? $errLastname:""; ?>
+						<input type="text" name="lname"> <?php echo isset($errLastname) ? $errLastname:""; ?>
 					</div>
 				</div>
 				<div class="row">
@@ -109,15 +114,15 @@
 						<p class="pr">Your Email*:</p>
 					</div>
 					<div class="col-sm-8">
-						<input type="email" name="email"><?php echo isset($errEmail) ? $errEmail:""; ?>
+						<input type="email" name="email"> <?php echo isset($errEmail) ? $errEmail:""; ?>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-4">
-						<p class="pr">New Password*:</p><?php echo isset($errPassword) ? $errPassword:"" ?>;
+						<p class="pr">New Password*:</p> 
 					</div>
 					<div class="col-sm-8">
-						<input type="password" name="password">
+						<input type="password" name="password"> <?php echo isset($errPassword) ? $errPassword:"" ?>;
 					</div>
 				</div>
 				<div class="row">
@@ -129,7 +134,7 @@
 							<option>Select Sex:</option>
 							<option>Male</option>
 							<option>Female</option>
-						</select>
+						</select> <?php echo isset($errGender) ? $errGender:"" ?>;
 					</div>
 				</div>
 				<div class="row">
@@ -137,7 +142,7 @@
 						<p class="pr">Birthday:</p>
 					</div>
 					<div class="col-sm-8">
-						<p> <input type="text" id="datepicker" name="birthday"></p><?php echo isset($errBirthday) ? $errBirthday:""; ?>
+						<input type="text" id="datepicker" name="birthday"> <?php echo isset($errBirthday) ? $errBirthday:""; ?>
 					</div>
 				</div>
 				<div class="row">
