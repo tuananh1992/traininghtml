@@ -1,0 +1,11 @@
+#info{
+	border: 1px solid black;
+	width: 600px;
+	margin: 0 auto;
+	padding: 10px;	
+}
+#process{
+	margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
