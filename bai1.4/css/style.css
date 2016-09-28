@@ -6,6 +6,15 @@
 }
 #process{
 	margin: 0 auto;
-    display: block;
-    margin-top: 10px;
+	display: block;
+	margin-top: 10px;
+}
+form{
+	width: 600px;
+	border: 1px solid red;
+	margin: 20px auto;
+	padding: 15px;
+}
+.input{
+	margin-bottom: 10px;
 }
